@@ -42,6 +42,6 @@ class AutoViewDomainListener extends AbstractListenerAggregate{
    */
   public function onDispatch(EventInterface $e){
     $routeMatch = $e->getRouteMatch();
-    $translator->setDefaultDomain($routeMatch->getParam('controller', $this->defaultDomain));
+    $this->translator->setDefaultDomain($routeMatch->getParam('controller', $this->defaultDomain));
   }
 }
