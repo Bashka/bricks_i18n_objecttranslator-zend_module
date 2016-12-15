@@ -69,6 +69,13 @@ class ObjectTranslator extends ZendTranslator implements ObjectTranslatorInterfa
     $this->defaultDomain = $domain;
   }
 
+  /**
+   * @return string
+   */
+  public function getDefaultDomain(){
+    return $this->defaultDomain;
+  }
+
   public function resetDefaultDomain(){
     $this->defaultDomain = 'global';
   }
